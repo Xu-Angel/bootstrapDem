@@ -217,7 +217,7 @@ h1 a.navbar-brand {
 }
 /* 背景跟随图 */
 #section-advantage, #section-join {
-  background: url(../img/img2.jpg) fixed;
+  background: url('./img/img2.jpg') fixed;
 }
 /* map */
 #section-map {
