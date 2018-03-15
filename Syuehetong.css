@@ -1,0 +1,564 @@
+/* nav */
+.nav-top-cont {
+    background: #fff;
+    margin: 0;
+    border-radius: 0;
+    height: 115px;
+    padding-left: 80px;
+}
+#navbar-menu {
+    display: inline-block;
+    float: right;
+    height: 115px;
+    line-height: 115px;
+}
+.logo1 {
+    text-indent: -20000px;
+    display: inline-block;
+    width: 195px;
+    height: 80px;
+    margin-top: 18px;
+    background: url('./img/yue-sprit001.png') no-repeat 0 0;
+    vertical-align: middle;
+}
+.logo2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 16px 0 0 0;
+    padding-left: 20px;
+    color: #35c1ec;
+    font-size: 1.8em;
+    font-weight: 100;
+}
+
+@media (max-width: 990px){
+#nav-login-area {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    text-align: right;
+    top: 80px;
+    left: 0;
+    padding-right: 1em;
+    border-bottom: 1px solid #ccc;
+    box-shadow: #bbb 0px 5px 10px;
+}
+#navbar-menu #top-nav-bt {
+    display: inline-block;
+    font-size: 1.5em;
+    /* margin-top: -3px; */
+    top: 48px;
+    position: absolute;
+    right: 5px;
+}
+}
+
+@media (max-width: 768px){
+    .nav-top-cont, #navbar-menu {
+        height: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    #navbar-menu {
+      display: block;
+  }
+    }
+   
+#navbar-menu a {
+    display: inline-block;
+    font-size: 1.14em;
+    margin: 0 3px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    color: #555;
+}
+@media (max-width: 1200px){
+    #navbar-menu a {
+        padding: 3px 6px;
+    }}
+#navbar-menu .split {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    margin-left: 5px;
+    border-left: 1px solid #2fb4e9;
+}
+
+/* search */
+.search-index {
+    height: 150px;
+    background: url('./img/s_bg.jpg');
+}
+.num-tips {
+    color: #fff;
+    font-size: 1.1em;
+}
+p {
+    margin: 0 0 10px;
+}
+
+.input-group {
+    position: relative;
+    display: table;  /* TODO:组合技巧*/
+    border-collapse: separate;
+    /* display: inline-table; */
+}
+
+#search-key {
+    height: 53px;
+    font-size: 1.1em;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    z-index: 2;
+}
+#s-i-bt {
+    height: 53px;
+    width: 112px;
+    background: #fdd26d url('./img/yue-sprit001.png') 50% -125px no-repeat;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+/* index-body */
+.index-body {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+/* common */
+.m-h2 {
+    font-size: 1.6em;
+    text-align: center;
+}
+.m-h2-mb {
+    margin: 2em 0;
+}
+#index-group .i-c-item-outer {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#index-group .i-c-item {
+    margin-bottom: 22px;
+    height: 280px;
+    background: #fff;
+    overflow: hidden;
+}
+#index-group .i-c-item a {
+    color: #555;
+}
+#index-group .i-c-ph, #index-group .i-c-ph1 {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    font-weight: 400;
+    left: 0;
+    width: 100%;
+}
+.i-c-p {
+    height: 174px;
+    position: relative;
+    text-align: center;
+}
+.i-c-p2 {
+    background: #e8b875 url('./img/yue-sprit002.png') no-repeat 50% -110px;
+}
+#index-group .i-c-p {
+    height: 42px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.i-c-list {
+    padding: 8px 5px 0 5px;
+    margin-bottom: 0;
+}
+#index-group .i-c-ph, #index-group .i-c-ph1 {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    font-weight: 400;
+    left: 0;
+    width: 100%;
+    line-height: 42px;
+}
+#index-group .i-c-p2 {
+    background: #e8b875 url('./img/yue-sprit004.png') no-repeat 35px -47px;
+}
+.i-c-item .more-bt2 {
+    color: rgb(144, 144, 144);
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    font-family: 新宋体, 宋体;
+    margin-top: -5px;
+}
+#index-group .i-c-item a {
+    color: #555;
+}
+.i-c-list {
+    padding: 8px 5px 0 5px;
+    margin-bottom: 0;
+}
+.i-c-list li {
+    height: 2.5em;
+    line-height: 2.5em;
+    overflow: hidden;
+    border-bottom: 1px dashed #eaeaea;
+    list-style: none;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+#index-group .i-c-p7 {
+    background: #baa1e2 url('./img/yue-sprit004.png') no-repeat 25px -260px;
+}
+#index-group .i-c-p5 {
+    background: #6581c3 url('./img/yue-sprit004.png') no-repeat 35px -172px;
+}
+#index-group .i-c-p4 {
+    background: #fad716 url('./img/yue-sprit004.png') no-repeat 35px -129px;
+}
+#index-group .i-c-p6 {
+    background: #8ea8f8 url('./img/yue-sprit004.png') no-repeat 35px -208px;
+}
+#index-group .i-c-p3 {
+    background: #fcbfdb url('./img/yue-sprit004.png') no-repeat 35px -85px;
+}
+#index-group .i-c-p8 {
+    background: #f97b39 url('./img/yue-sprit004.png') no-repeat 35px -315px;
+}
+#index-group .i-c-p9 {
+    background: #97cb26 url('./img/yue-sprit004.png') no-repeat 35px -365px;
+}
+
+/* main body */
+.busrow {
+    background: #fff;
+}
+.main-body {
+    padding: 2em 2em 3em 2em;
+    color: #666;
+}
+.m-h2 i {
+    display: none;
+}
+.busblock {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    height: 280px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    color: #555;
+}
+.buspicblock {
+    color: #fff;
+    padding: 1.5em 0;
+    border: 1px solid #fff;
+}
+.buspicblock.p3 {
+    background: #f97b39;
+}
+.busblock i {
+    font-size: 2.5em;
+    font-weight: 100;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 2px;
+    text-align: center;
+    border: 1px solid;
+    margin-bottom: .3em;
+    border-radius: 50%;
+}
+.buspicblock p {
+    font-size: 1.1em;
+}
+.busblock p {
+    margin: 0;
+}
+.busblock h2 {
+    font-size: 1.3em;
+    margin: 15px 0 10px 0;
+}
+.price-y {
+    color: #777;
+    text-decoration: line-through;
+}
+.busblock b {
+    font-weight: normal;
+    color: #ed711f;
+    font-size: 1.2em;
+}
+.busblock b.price-y {
+    color: #777;
+}
+.busblock:hover {
+    text-decoration: none;
+    color: #666;
+}
+/* bged */
+.bged {
+    background: #ededed;
+}
+.youshi {
+    width: 15.666667%;
+    display: inline-block;
+    vertical-align: top;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    margin: 2.5em 0;
+}
+@media (max-width: 990px){
+.youshi {
+    border: 0;
+}}
+@media (max-width: 560px){
+.youshi {
+    display: none;
+}}
+.youshi .term {
+    display: inline-block;
+    height: 78px;
+    width: 150px;
+    background: url('./img/yue-sprit0052.png') no-repeat;
+}
+@media (max-width: 560px){
+.youshi .term {
+    display: none;
+}}
+.youshi .term-1 {
+    width: 125px;
+    background-position: -130px 0;
+}
+.youshi .term-2 {
+    width: 125px;
+}
+.youshi .term-3 {
+    width: 100px;
+    background-position: -3px -85px;
+}
+.youshi .term-4 {
+    width: 113px;
+    background-position: 6px -168px;
+}
+.youshi .term-6 {
+    width: 120px;
+    background-position: -103px -168px;
+}
+.youshi .term-5 {
+    width: 100px;
+    background-position: -115px -83px;
+}
+.youshi-d1, .youshi-d2 {
+    display: none;
+}
+/* main-body2 */
+.main-body2 {
+    padding: 2em 0 4em 0;
+    background: url('./img/ent-bg.jpg') no-repeat;
+}
+.m-brand, .c-brand {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    width: 16.666667%;
+    height: auto;
+    border: 1px solid #bababa;
+    margin-left: -1px;
+    margin-top: -1px;
+    background: #fff;
+    cursor: pointer;
+}
+.m-brand img, .c-brand img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .6s cubic-bezier(.19,1,.22,1);
+    transition: all .6s cubic-bezier(.19,1,.22,1);
+}
+/* footer */
+footer {
+    background: #efefef;
+    height: auto;
+    color: #7a7a7a;
+    padding-bottom: 40px;
+}
+#footer-in {
+    position: relative;
+}
+footer .cp {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.footer-menu .col-sm-6 {
+    margin-bottom: 1em;
+}
+.ftitle {
+    color: #333;
+    font-size: 1.2em;
+}
+footer a {
+    color: #7a7a7a;
+}
+.footer-menu a {
+    display: block;
+    margin: .5em 0;
+}
+a:hover {
+    color: #3169b0;
+    text-decoration: none;
+}/**TODO:/
+/* right nav  */
+.right-nav {
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+    z-index: 999;
+}
+#top-a, .rnav-wx, .rnav-tel {
+    background: #3890ff;
+    border: 1px solid #3890ff;
+    display: block;
+    width: 48px;
+    height: 48px;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.rnav-wx, .rnav-tel {
+    font-size: 1.8em;
+    padding-top: 2px;
+}
+.rnav-wxc, .rnav-telc {
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    margin-left: -150px;
+    margin-top: -100px;
+    padding: 1em;
+    border: 1px solid #3890ff;
+    display: none;
+}
+.rnav-wxc img, .rnav-wxc2 img {
+    width: 120px;
+    height: 120px;
+}
+.rnav-wx2{color:#3890ff;background:#fff;font-size:1em;line-height:1.2em;padding:7px 5px 0 5px}
+/* modal  */
+@media (min-width: 768px)
+{
+#modalLogin .modal-sm {
+    width: 380px;
+    margin-top: 120px;
+}
+}
+#modalLogin .modal-header, #modalLogin .modal-footer, #modalReg .modal-header, #modalReg .modal-footer, #modalMail .modal-footer {
+    border: 0;
+}
+#modalLogin .modal-body, #modalReg .modal-body, #modalMail .modal-body {
+    padding: 0;
+}
+#modalLogin .modal-header, #modalLogin .modal-footer, #modalReg .modal-header, #modalReg .modal-footer, #modalMail .modal-footer {
+    border: 0;
+}
+.btn-login-group {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 2em;
+}
+.bt-login.sel {
+    border-bottom: 3px solid #2fb4e9;
+    color: #2fb4e9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+#modalLogin .modal-body input, #modalReg .modal-body input, #modalMail .modal-body input {
+    height: 4em;
+    line-height: 4em;
+    margin-top: -1px;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    box-shadow: none;
+    border-radius: 0;
+}
+#pcode-a {
+    position: absolute;
+    right: 10px;
+    z-index: 500;
+    top: 15px;
+    background: #2fb4e9;
+    color: #fff;
+    padding: .3em;
+}
+.bt-login {
+    background: #fff;
+    border-radius: 0;
+    font-size: 1.2em;
+    color: #999;
+}
+#modalLogin .btn-login, #modalReg .btn-reg {
+    background: #2fb4e9;
+    color: #fff;
+    margin: 0 3px;
+    font-size: 1.1em;
+    padding: .3em 0;
+    width: 100%;
+}
+#wxlogbt {
+    background: url('./img/icon24_appwx_logo.png') no-repeat 0 50%;
+    padding-left: 30px;
+    display: inline-block;
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    color: #333;
+}
+.modal-footer-logbt {
+    text-align: center;
+}
+.btn-login-group {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 2em;
+}
+.right-nav a:hover, #top-a:hover {
+    background: #fff;
+    color: #3890ff;
+    text-decoration: none;
+}

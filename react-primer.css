@@ -1,0 +1,287 @@
+/*
+ * @Author: Angel 
+ * @Date: 2018-03-14 12:04:16 
+ * @Last Modified by: 1049547382@qq.com
+ * @Last Modified time: 2018-03-14 14:54:17
+ * 上午布局完成
+ */
+/* common */
+
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #888888;
+  margin: 0;
+}
+a {
+  color: #00a79d;
+  text-decoration: none;
+}
+img{max-width: 100%;}
+.main-section {
+  padding: 90px 0 110px;
+}
+h2 {
+  font-size: 34px;
+  color: #222222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0 0 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+h6 {
+  font-size: 16px;
+  color: #888888;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #222222;
+  font-size: 16px;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+p {
+  line-height: 24px;
+  margin: 0;
+}
+
+/* header :start */
+.header {
+  text-align: center;
+  background: url('./img/pw_maze_black_2X.png') left top repeat;
+  padding: 280px 0;
+}
+.logo {
+  width: 130px;
+  margin: 0 auto 35px;
+}
+.header h1 {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin: 0 0 22px 0;
+  color: #fff;
+}
+.we-create {
+  padding: 0;
+  margin: 35px 0 55px;
+}
+.we-create li {
+  display: inline-block;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  color: #bcbcbc;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 5px 0 0;
+  padding: 0 0 0 15px;
+}
+.link {
+  padding: 15px 35px;
+  background: #00a79d;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  border-radius: 3px;
+  text-transform: uppercase;
+  line-height: 25px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.link:hover {
+  text-decoration: none;
+  color: #00a79d !important;
+  background: #fff;
+}
+/* nav :start */
+.main-nav-outer {
+  padding: 0px;
+  border-bottom: 1px solid #dddddd;
+  box-shadow: 0 4px 5px -3px #ececec;
+  position: relative;
+  background: #fff;
+  z-index: auto;
+  position: relative;
+  top: 0px;
+}
+.main-nav {
+  text-align: center;
+  margin: 10px 0 0px;
+  padding: 0;
+  list-style: none;
+}
+.main-nav li {
+  display: inline;
+  margin: 0 1px;
+}
+.small-logo {
+  padding: 0 32px;
+}
+.main-nav li a {
+  display: inline-block;
+  color: #222222;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  line-height: 20px;
+  margin: 17px 32px;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.service-list {
+  padding: 0 0 0 0;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.service-list-col1 {
+  float: left;
+  width: 60px;
+}
+.service-list-col2 {
+  overflow: hidden;
+}
+/* download :start */
+.main-section.padding {
+  background: url('./img/pw_maze_black_2X.png') left top repeat;
+  padding: 60px 0 10px;
+}
+.Portfolio-nav {
+  padding: 0;
+  margin: 0 0 45px 0;
+  list-style: none;
+  text-align: center;
+}
+.Portfolio-nav li {
+  margin: 10px 10px;
+  display: inline-blcok;
+  font-size: 2.3em;
+  font-family: 'Open Sans';
+  /* margin-bottom: 4em; */
+}
+/* 区间更换 */
+@media (min-width:996px) {
+.Portfolio-nav li
+{
+  display: inline;
+}
+}
+.Portfolio-nav li a {
+  width: 7.5em;
+  height: 2.2em;
+  /* border: black solid 1px; */
+  display: inline-block;
+  padding: 13px 22px;
+  line-height: 1.5em;
+  color: white;
+  border-radius: 4px;
+  /* text-transform: uppercase; */
+  background: #464646;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.Portfolio-nav li a:hover {
+  background: #00a79d;
+  color: #fff;
+  text-decoration: none;
+}
+.service-list-col1 i {
+  font-style: normal;
+  font-size: 38px;
+  display: block;
+  color: #222;
+  line-height: 38px;
+}
+
+/* team :start */
+.team-leader-box {
+  width: 28.66%;/*宽度还不对*/
+  margin-right: 3.82979%;
+  height: 490px;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+}
+.team-leader {
+  width: auto;
+  height: auto;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 7px rgba(241,241,241,0.80);
+  margin: 7px 7px 25px 7px;
+}
+.team-leader-box span {
+  margin-bottom: 24px;
+  display: block;
+}
+.team-leader-shadow {
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  border-radius: 50%;
+}
+.team-leader img {
+  display: block;
+  border-radius: 50%;
+}
+.team-leader-shadow a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.team-leader ul {
+  display: block;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: -14px;
+  z-index: 15;
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+}
+/* logo :start */
+.footer {
+  background: url('./img/pw_maze_black_2X.png') left top repeat;
+  padding: 35px 0 35px;
+}
+.footer-logo {
+  margin: 15px auto 35px;
+  width: 76px;
+}
+.copyright, .credits {
+  color: #cccccc;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+/* icon-font */
+.fa-windows:before {
+  content: "\f17a";
+}
+

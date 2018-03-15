@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>yuehe/tong</title>
+  <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Syuehetong.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries "-->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// "-->
+  <!--[if lt IE 9]">
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script >
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container-fluid nav-top-cont">
+      <div class="navbar-header">
+        <a class="logo1" href="https://yuehetong.com">
+          <h1>悦合同_专业合同服务商</h1>
+        </a>
+        <span class="logo2">专业合同服务商</span>
+      </div>
+      <div id="navbar-menu">
+        <span id="top-main-menu" style="">
+          <a href="https://yuehetong.com/report" class="btn">悦读</a>
+          <a href="https://yuehetong.com/event" class="btn">悦活动</a>
+          <a href="https://yuehetong.com/hetongfanben" class="btn">智能合同</a>
+          <a href="https://yuehetong.com/xiehetong" class="btn">写合同</a>
+          <a href="https://yuehetong.com/gaihetong" class="btn">审合同</a>
+        </span>
+        <a href="javascript:toggleMore();" class="btn" id="top-nav-bt">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <span id="nav-login-area" style="display: inline-block;">
+          <div id="top-my-menu" style="display: none;">
+            <a href="https://yuehetong.com/report" class="btn">悦读</a>
+            <a href="https://yuehetong.com/event" class="btn">悦活动</a>
+            <a href="https://yuehetong.com/hetongfanben" class="btn">智能合同</a>
+            <a href="https://yuehetong.com/xiehetong" class="btn">写合同</a>
+            <a href="https://yuehetong.com/gaihetong" class="btn">审合同</a>
+          </div>
+          <span class="split">&nbsp;</span>
+          <script>
+            hasLogin = false;
+
+          </script>
+          <!--<a href='#' class='btn' data-toggle="modal" data-target="#modalLogin">登录</a>-->
+          <a href="#" class="btn" data-toggle="modal" data-target="#modalReg" id="modalReg-bt">
+            <i class="fa fa-user-o"></i> 登陆</a>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end -->
+  <div class="search-index">
+    <div class="col-sm-8 col-sm-offset-2 col-xs-12 s-inner">
+      <p class="num-tips">&nbsp;</p>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="请输入您要搜索的关键字，如股权转让合同、版权授权、劳动" id="search-key">
+        <span class="input-group-btn">
+          <a class="btn" id="s-i-bt" href="javascript:search();" role="button"></a>
+        </span>
+      </div>
+      <!-- /input-group -->
+    </div>
+  </div>
+  <!-- search-index end -->
+  <div class="container index-body">
+    <h2 class="m-h2 m-h2-mb">智能合同
+      <i>用户需求 · 智能定制</i>
+    </h2>
+    <div class="row">
+      <!-- i-c-g index contract group -->
+      <div class="i-c-g" id="index-group">
+        <!-- 股权 -->
+        <div class="col-md-3 col-sm-4 col-xs-6 i-c-item-outer" id="aic_interest">
+          <div class="i-c-item">
+            <a href="/contract/interest" title="股权相关智能合同定制">
+              <div class="i-c-p i-c-p2">
+                <h2 class="i-c-ph">股权</h2>
+              </div>
+            </a>
+            <ul class="i-c-list">
+              <li>
+                <a href="/diy/chuzixieyi" title="出资协议">出资协议</a>
+              </li>
+              <li>
+                <a href="/diy/guquanzhuanrangxieyi" title="股权转让协议">股权转让协议</a>
+              </li>
+              <li>
+                <a href="/diy/guquandaichixieyi" title="股权代持协议">股权代持协议</a>
+              </li>
+              <li>
+                <a href="/diy/zengzixieyi" title="增资协议">增资协议</a>
+              </li>
+              <li>
+                <a href="/diy/zichanshougouxieyi" title="资产收购协议">资产收购协议</a>
+              </li>
+            </ul>
+            <a href="/contract/interest" class="more-bt2">...</a>
+          </div>
+        </div>
+        <!-- 知识产权 -->
+        <div class="col-md-3 col-sm-4 col-xs-6 i-c-item-outer" id="aic_cp">
+          <div class="i-c-item">
+            <a href="/contract/cp" title="知识产权相关智能合同定制">
+              <div class="i-c-p i-c-p7">
+                <h2 class="i-c-ph">知识产权</h2>
+              </div>
+            </a>
+            <ul class="i-c-list">
+              <li>
+                <a href="/diy/zhuanlijishuxukehetong" title="专利技术许可合同">专利技术许可合同</a>
+              </li>
+              <li>
+                <a href="/diy/zhuanlizhuanranghetong" title="专利转让合同">专利转让合同</a>
+              </li>
+              <li>
+                <a href="/diy/shangbiaoxukeshiyonghetong" title="商标许可使用合同">商标许可使用合同</a>
+              </li>
+              <li>
+                <a href="/diy/shangbiaozhuanranghetong" title="商标转让合同">商标转让合同</a>
+              </li>
+              <li>
+                <a href="/diy/banquanshouquanxieyiyibanzuopin" title="版权授权协议（一般作品）">版权授权协议（一般作品）</a>
+              </li>
+            </ul>
+            <a href="/contract/cp" class="more-bt2">...</a>
+          </div>
+        </div>
+        <!-- 人事 -->
+        <div class="col-md-3 col-sm-4 col-xs-6 i-c-item-outer" id="aic_hr">
+          <div class="i-c-item">
+            <a href="/contract/hr" title="人事相关智能合同定制">
+              <div class="i-c-p i-c-p5">
+                <h2 class="i-c-ph">人事</h2>
+              </div>
+            </a>
+            <ul class="i-c-list">
+              <li>
+                <a href="/diy/zaizhizhishichanquanhetong" title="在职知识产权合同">在职知识产权合同</a>
+              </li>
+              <li>
+                <a href="/diy/laodonghetong" title="劳动合同">劳动合同</a>
+              </li>
+              <li>
+                <a href="/form/yuangonglizhijiaojiequerenshu" title="员工离职交接确认书">员工离职交接确认书</a>
+              </li>
+              <li>
+                <a href="/diy/lizhixieyi" title="离职协议">离职协议</a>
+              </li>
+              <li>
+                <a href="/diy/jiechulaodonghetongtongzhishu" title="解除劳动合同通知书">解除劳动合同通知书</a>
+              </li>
+            </ul>
+            <a href="/contract/hr" class="more-bt2">...</a>
+          </div>
+        </div>
+        <!-- 金融 -->
+        <!-- 担保 -->
+        <div class="col-md-3 col-sm-4 col-xs-6 i-c-item-outer" id="aic_guarantee">
+          <div class="i-c-item">
+            <a href="/contract/guarantee" title="担保相关智能合同定制">
+              <div class="i-c-p i-c-p4">
+                <h2 class="i-c-ph">担保</h2>
+              </div>
+            </a>
+            <ul class="i-c-list">
+              <li>
+                <a href="/diy/baozhenghetong" title="保证合同-一人保证">保证合同-一人保证</a>
+              </li>
+              <li>
+                <a href="/diy/baozhenghetong-lgysbzr" title="保证合同-两个以上保证人">保证合同-两个以上保证人</a>
+              </li>
+              <li>
+                <a href="/diy/diyahetong" title="房屋抵押合同">房屋抵押合同</a>
+              </li>
+              <li>
+                <a href="/diy/zhiyahetong" title="质押合同">质押合同</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 房地产 -->
+        <div class="col-md-3 col-sm-4 col-xs-6 i-c-item-outer" id="aic_estate">
+          <div class="i-c-item">
+            <a href="/contract/estate" title="房地产相关智能合同定制">
+              <div class="i-c-p i-c-p6">
+                <h2 class="i-c-ph">房地产</h2>
+              </div>
+            </a>
+            <ul class="i-c-list">
+              <li>
+                <a href="/diy/shangpuzulinhetong" title="商铺租赁合同">商铺租赁合同</a>
+              </li>
+              <li>
+                <a href="/diy/changdizulinhetongnongcun" title="场地租赁合同（农村）">场地租赁合同（农村）</a>
+              </li>
+              <li>
+                <a href="/diy/zhanweizulinhetong" title="展位租赁合同">展位租赁合同</a>
+              </li>
+              <li>
+                <a href="/diy/jianshegongchengchengbaohetong" title="建设工程承包合同">建设工程承包合同</a>
+              </li>
+              <li>
+                <a href="/diy/fangwuzulinhetong" title="房屋租赁合同">房屋租赁合同</a>
+              </li>
+            </ul>
+            <a href="/contract/estate" class="more-bt2">...</a>
+          </div>
+        </div>
+        <!-- 婚姻 -->
+        <div class="col-md-3 col-sm-4 col-xs-6 i-c-item-outer" id="aic_marriage">
+          <div class="i-c-item">
+            <a href="/contract/marriage" title="婚姻相关智能合同定制">
+              <div class="i-c-p i-c-p3">
+                <h2 class="i-c-ph">婚姻</h2>
+              </div>
+            </a>
+            <ul class="i-c-list">
+              <li>
+                <a href="/diy/fuqihunhoucaichanyuedingshu" title="夫妻婚后财产约定书">夫妻婚后财产约定书</a>
+              </li>
+              <li>
+                <a href="/diy/fuyangquanxieyi" title="抚养权协议">抚养权协议</a>
+              </li>
+              <li>
+                <a href="/diy/lihunxieyibiaozhunban" title="离婚协议（标准版）">离婚协议（标准版）</a>
+              </li>
+              <li>
+                <a href="/diy/lihunxieyijianyiban" title="离婚协议（简易版）">离婚协议（简易版）</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 买卖 -->
+        <div class="col-md-3 col-sm-4 col-xs-6 i-c-item-outer" id="aic_sale">
+          <div class="i-c-item">
+            <a href="/contract/sale" title="买卖相关智能合同定制">
+              <div class="i-c-p i-c-p8">
+                <h2 class="i-c-ph">买卖</h2>
+              </div>
+            </a>
+            <ul class="i-c-list">
+              <li>
+                <a href="/diy/peiougongyouquanrentongyichushouzhengming" title="配偶（共有权人）同意出售证明">配偶（共有权人）同意出售证明</a>
+              </li>
+              <li>
+                <a href="/diy/tingchechangqicaimaimaihetong" title="停车场器材买卖合同">停车场器材买卖合同</a>
+              </li>
+              <li>
+                <a href="/diy/huowumaimaihetong" title="货物买卖合同">货物买卖合同</a>
+              </li>
+              <li>
+                <a href="/diy/gouxiaohetongxiangxiban" title="购销合同">购销合同</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 服务 -->
+        <div class="col-md-3 col-sm-4 col-xs-6 i-c-item-outer" id="aic_service">
+          <div class="i-c-item">
+            <a href="/contract/service" title="服务相关智能合同定制">
+              <div class="i-c-p i-c-p9">
+                <h2 class="i-c-ph">服务</h2>
+              </div>
+            </a>
+            <ul class="i-c-list">
+              <li>
+                <a href="/diy/qiyefuwudailihetong" title="企业服务代理合同">企业服务代理合同</a>
+              </li>
+              <li>
+                <a href="/diy/qingdianfuwuhetong" title="庆典服务合同">庆典服务合同</a>
+              </li>
+              <li class="no-item"></li>
+              <li class="no-item"></li>
+              <li class="no-item"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <!-- end of i-c-g index contract group -->
+    </div>
+  </div>
+  <!-- index-body end -->
+  <div class="container-fluid main-body busrow">
+    <div class="container">
+      <h2 class="m-h2 m-h2-mb">个性化服务
+        <i>专业合同一揽子解决方案</i>
+      </h2>
+      <div class="row">
+        <!-- a business block -->
+        <!--
+          <div class='b-outer'><a class='busblock' href='https://yuehetong.com/contract' data-colid='1'><div class='buspicblock p1'><i class="fa fa-wpforms" aria-hidden="true"></i><p>规范、智能</p><p>1秒生成合同</p></div><h2>智能合同</h2><p><span><b>0元</b>起</span></p></a></div>-->
+        <div class="col-sm-4 col-xs-12">
+          <a class="busblock" href="https://yuehetong.com/xiehetong" data-colid="4">
+            <div class="buspicblock p3">
+              <i class="fas fa-font" aria-hidden="true"></i>
+              <!--<p>合同利益</p><p>安全保障</p>-->
+              <p>你提需求</p>
+              <p>我出合同</p>
+            </div>
+            <h2>写合同</h2>
+            <p>
+              <span>原价:
+                <b class="price-y">3000</b>元/次</span>
+            </p>
+            <p>
+              <span>限时价:
+                <b>1000</b>元/次</span>
+            </p>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <a class="busblock" href="https://yuehetong.com/xiehetong" data-colid="4">
+            <div class="buspicblock p3">
+              <i class="fas fa-font" aria-hidden="true"></i>
+              <!--<p>合同利益</p><p>安全保障</p>-->
+              <p>你提需求</p>
+              <p>我出合同</p>
+            </div>
+            <h2>写合同</h2>
+            <p>
+              <span>原价:
+                <b class="price-y">3000</b>元/次</span>
+            </p>
+            <p>
+              <span>限时价:
+                <b>1000</b>元/次</span>
+            </p>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <a class="busblock" href="https://yuehetong.com/xiehetong" data-colid="4">
+            <div class="buspicblock p3">
+              <i class="fa fa-font" aria-hidden="true"></i>
+              <!--<p>合同利益</p><p>安全保障</p>-->
+              <p>你提需求</p>
+              <p>我出合同</p>
+            </div>
+            <h2>写合同</h2>
+            <p>
+              <span>原价:
+                <b class="price-y">3000</b>元/次</span>
+            </p>
+            <p>
+              <span>限时价:
+                <b>1000</b>元/次</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main-body end -->
+  <div class="container-fluid bged">
+    <div class="container">
+      <div class="youshi">
+        <span class="term term-1"></span>
+        <span class="youshi-d1">8年+</span>
+        <span class="youshi-d2">专业律师经验</span>
+      </div>
+      <div class="youshi">
+        <span class="term term-2"></span>
+        <span class="youshi-d1">10万+</span>
+        <span class="youshi-d2">司法数据支撑</span>
+      </div>
+      <div class="youshi">
+        <span class="term term-3"></span>
+        <span class="youshi-d1">7天</span>
+        <span class="youshi-d2">无条件退款</span>
+      </div>
+      <div class="youshi">
+        <span class="term term-4"></span>
+        <span class="youshi-d1">7天</span>
+        <span class="youshi-d2">修改到满意</span>
+      </div>
+      <div class="youshi">
+        <span class="term term-6"></span>
+        <span class="youshi-d1">24小时</span>
+        <span class="youshi-d2">最快回复</span>
+      </div>
+      <div class="youshi">
+        <span class="term term-5"></span>
+        <span class="youshi-d1">1V1</span>
+        <span class="youshi-d2">大客户服务</span>
+      </div>
+    </div>
+  </div>
+  <!-- bged end -->
+  <div class="container-fluid main-body2">
+    <div class="container" id="user-logo">
+      <h2 class="m-h2 m-h2-mb">
+        <b>100+</b>家企业明智的选择</h2>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/bosk.png" alt="悦合同用户-博思凯电子">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/xinli001.png" alt="悦合同用户-壹心理">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/wyqc.png" alt="悦合同用户-无忧启程">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/xns.png" alt="悦合同用户-小女森-品质童装">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/rjl.png" alt="悦合同用户-人境庐">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/byzs.png" alt="悦合同用户-深圳博云智社科技">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/ctyxfzjjh.png" alt="悦合同用户-中华传统医学发展基金会">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/kesuichong.jpg" alt="悦合同用户-睡眠专家瞌睡虫">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/yhc.png" alt="悦合同用户-云海潮">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/zmr.png" alt="悦合同用户-展门人">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/rrck.png" alt="悦合同用户-人人车库">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/smarter.png" alt="悦合同用户-smarter科技">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/meiyi1.png" alt="悦合同用户-美益集团">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/bomboo.jpg" alt="悦合同用户-bomboo">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/painimei.jpg" alt="悦合同用户-拍你魅">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/dandelo.jpg" alt="悦合同用户-金洪运动器材有限公司">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/ever-win.jpg" alt="悦合同用户-嘉美（香港）贸易">
+      </div>
+      <div class="m-brand">
+        <img src="https://s1.yuehetong.com/clogo/zway.jpg" alt="悦合同用户-zway">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <!-- main-body2 end -->
+  <footer></footer>
+  <!-- footer end -->
+  <!-- Modal start -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="btn-group btn-group-justified btn-login-group" role="group">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn bt-login" onclick="switchToModal(&quot;reg&quot;);">快速登陆/免费加入</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn bt-login sel">账号密码登陆</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-danger alert-dismissible fade in" role="alert" id="modalLoginErr" style="display: none;">
+            <span id="modalLoginErrCont"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="modal-login-name" placeholder="支持手机号/邮箱登陆" style="border-top:none;">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="modal-login-pwd" placeholder="密码">
+          </div>
+        </div>
+        <!-- modal-body -->
+        <div class="modal-footer">
+          <div class="modal-footer-tips">
+            <label style="float:left;">
+              <input type="checkbox" id="chk-rmb" value="rmb" checked="checked"> 下次自动登陆</label>
+            <a href="#">忘记密码？</a>&nbsp;|&nbsp;
+            <a href='javascript:switchToModal("reg");'>新用户注册</a>
+          </div>
+          <a role="button" href="javascript:login();" class="btn btn-login" data-loading-text="验证中...">登录</a>
+          <hr>
+          <div class="modal-footer-logbt">
+            <a href="https://yuehetong.com/account/connect/weixin" id="wxlogbt">微信直接登陆</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid main-body busrow">
+    <div class="container">
+      <h2 class="m-h2 m-h2-mb">悦合同合作方</h2>
+      <div class="c-brand">
+        <a href="http://www.slashedon.com" target="_blank" rel="nofollow">
+          <img src="https://s1.yuehetong.com/clogo/slashedon.jpg" alt="悦合同合作方-商理事">
+        </a>
+      </div>
+      <div class="c-brand">
+        <a href="http://www.yingkelawyer.com" target="_blank" rel="nofollow">
+          <img src="https://s1.yuehetong.com/clogo/yingkelogo.jpg" alt="悦合同合作方-盈科律师事务所">
+        </a>
+      </div>
+      <div class="c-brand">
+        <a href="http://www.qcloud.com" target="_blank" rel="nofollow">
+          <img src="https://s1.yuehetong.com/clogo/qcloud.png" alt="悦合同合作方-腾讯云">
+        </a>
+      </div>
+      <div class="c-brand">
+        <a href="http://www.gdhzz.com" target="_blank" rel="nofollow">
+          <img src="https://s1.yuehetong.com/clogo/haizhizhu.jpg" alt="悦合同合作方-广州海之珠职业培训学校">
+        </a>
+      </div>
+      <div class="c-brand">
+        <a href="http://www.1918office.com" target="_blank" rel="nofollow">
+          <img src="https://s1.yuehetong.com/clogo/1918.png" alt="悦合同合作方-1918青年创业社区">
+        </a>
+      </div>
+      <div class="c-brand">
+        <a href="http://www.nanjiquan.com" target="_blank" rel="nofollow">
+          <img src="https://s1.yuehetong.com/clogo/nanjiquan.png" alt="悦合同合作方-南极圈">
+        </a>
+      </div>
+      <div class="c-brand">
+        <img src="https://s1.yuehetong.com/clogo/zhizhu.jpg" alt="悦合同合作方-蜘蛛精知识产权服务">
+      </div>
+      <div class="c-brand">
+        <a href="http://www.duoyoumi.com" target="_blank" rel="nofollow">
+          <img src="https://s1.yuehetong.com/clogo/duoyoumi.jpg" alt="悦合同合作方-多有米">
+        </a>
+      </div>
+      <div class="c-brand">
+        <a href="http://www.makerstreet.com.cn" target="_blank" rel="nofollow">
+          <img src="https://s1.yuehetong.com/clogo/makerstreet2.jpg" alt="悦合同合作方-创客街">
+        </a>
+      </div>
+      <div class="c-brand">
+        <a href="http://www.36kr.com" target="_blank" rel="nofollow">
+          <img src="https://s1.yuehetong.com/clogo/36kr.png" alt="悦合同合作方-36Kr">
+        </a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <!-- busrow end -->
+  <footer>
+    <div class="container" id="footer-in">
+      <div class="col-sm-8 footer-menu">
+        <div class="col-sm-6">
+          <div class="col-xs-6">
+            <div class="ftitle">产品</div>
+            <a href="#" title="写合同范本">写合同</a>
+            <a href="#" title="审合同.改合同">审合同</a>
+            <a href="#" title="法律|合同顾问">合同顾问</a>
+          </div>
+          <div class="col-xs-6">
+            <div class="ftitle">政策</div>
+            <a href="#" title="服务协议">服务协议</a>
+            <a href="#" title="faq.常见问题">常见问题</a>
+            <a href="#" title="悦合同会员政策">会员政策</a>
+            <a href="#" title="悦合同会员权益">会员权益</a>
+            <a href="#" title="服务和商品定价标准">定价标准</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-xs-6">
+            <div class="ftitle">公司</div>
+            <a href="#" title="品牌故事">品牌故事</a>
+            <a href="#" title="关于我们">关于我们</a>
+            <a href="#" title="联系方式:客服|合作">联系我们</a>
+            <a href="#" title="悦合同招聘">加入我们</a>
+          </div>
+          <div class="col-xs-6">
+            <div class="ftitle">资源</div>
+            <a href="#">网站地图</a>
+            <a href="#">意见反馈</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="col-sm-4 cp">
+        <p>© 悦合同</p>
+        <p>
+          <a href="#">yuehetong.com</a>
+        </p>
+        <p>
+          <a target="_blank" href="#" rel="nofollow">粤ICP备16004471号 </a>
+        </p>
+        <p>版权所有 © 广州诚心网络科技有限公司</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- /container -->
+  </footer>
+  <!-- footer end -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="btn-group btn-group-justified btn-login-group" role="group">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn bt-login" onclick="switchToModal(&quot;reg&quot;);">快速登陆/免费加入</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn bt-login sel">账号密码登陆</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-danger alert-dismissible fade in" role="alert" id="modalLoginErr" style="display: none;">
+            <span id="modalLoginErrCont"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="modal-login-name" placeholder="支持手机号/邮箱登陆" style="border-top:none;">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="modal-login-pwd" placeholder="密码">
+          </div>
+        </div>
+        <!-- modal-body -->
+        <div class="modal-footer">
+          <div class="modal-footer-tips">
+            <label style="float:left;">
+              <input type="checkbox" id="chk-rmb" value="rmb" checked="checked"> 下次自动登陆</label>
+            <a href="#">忘记密码？</a>&nbsp;|&nbsp;
+            <a href="javascript:switchToModal(" reg ");">新用户注册</a>
+          </div>
+          <a role="button" href="javascript:login();" class="btn btn-login" data-loading-text="验证中...">登录</a>
+          <hr>
+          <div class="modal-footer-logbt">
+            <a href="#" id="wxlogbt">微信直接登陆</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal end -->
+  <div class="modal fade" id="modalReg" tabindex="-1" role="dialog" aria-labelledby="modalReg" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="btn-group btn-group-justified btn-login-group" role="group">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn bt-login sel">快速登陆/免费加入</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn bt-login" onclick="switchToModal(&quot;login&quot;);">账号密码登陆</button>
+            </div>
+          </div>
+          <div class="alert alert-danger alert-dismissible fade in" role="alert" id="alertRegTips" style="display: none;">
+            <span id="alertRegTipsCont"></span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-danger alert-dismissible fade in" role="alert" id="modalRegErr" style="display: none;">
+            <span id="modalRegErrCont"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="modal-reg-name" placeholder="手机号" style="border-top:none;">
+          </div>
+          <div class="form-group" id="pcode-area">
+            <input type="text" class="form-control" id="modal-reg-pcode" placeholder="6位手机验证码">
+            <button role="button" class="btn" id="pcode-a">获取验证码</button>
+          </div>
+        </div>
+        <!-- modal-body -->
+        <div class="modal-footer">
+          <div id="reg-succ-tips"></div>
+          <a role="button" href="javascript:reg();" class="btn btn-reg" data-loading-text="登陆中..." id="f-reg-bt">快捷登陆</a>
+          <hr>
+          <div class="modal-footer-logbt">
+            <a href="#" id="wxlogbt">微信直接登陆</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal end -->
+  <div class="modal fade" id="modalPwd" tabindex="-1" role="dialog" aria-labelledby="modalPwd" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>设置密码</h4>
+          <p>欢迎来到悦合同，首次使用请设置密码</p>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-danger alert-dismissible fade in" role="alert" id="modalPwdErr">
+            <span id="modalPwdErrCont"></span>
+          </div>
+          <div class="form-group pwd-input">
+            <input type="password" class="form-control" id="modal-reg-pwd" placeholder="设置密码（不少于6位）">
+          </div>
+        </div>
+        <!-- modal-body -->
+        <div class="modal-footer">
+          <div class="modal-footer-l">
+            <label>
+              <input type="checkbox" id="modal-achk">我已阅读并同意
+              <a href="#" target="_blank">《悦合同服务协议》</a>
+            </label>
+          </div>
+          <div id="reg-succ-tips"></div>
+          <a role="button" class="btn btn-default" data-dismiss="modal">跳过,以后再设</a>
+          <a role="button" class="btn btn-primary" id="f-pwd-bt">完成设置</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal end -->
+  <div class="right-nav" id="right-nav">
+    <a href="javascript:toTop();" id="top-a" style="display: block;">
+      <i class="fas fa-angle-up" aria-hidden="true"></i>
+    </a>
+    <a id="rnav-wx" class="rnav-wx" data-cont="微信客服">
+      <i class="fab fa-weixin"></i>
+    </a>
+    <div id="rnav-wxc" class="rnav-wxc" style="/* display: none; */">
+      <img src="./img/rnav-wx1.jpg" alt="微信客服1">
+      <div id="rnav-wxd">微信扫码咨询
+        <br>请备注“
+        <b>合同服务</b>”</div>
+    </div>
+  </div>
+  <!-- right nav end -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) "-->
+  <script src="./lib/jQuery/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./common.js"></script>
+</body>
+
+</html>
